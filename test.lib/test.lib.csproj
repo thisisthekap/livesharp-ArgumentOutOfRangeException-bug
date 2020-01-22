@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+<!--    <DefineConstants>LIVESHARP_DISABLE</DefineConstants>-->
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveSharp" Version="1.1.20" />
+  </ItemGroup>
 
 </Project>

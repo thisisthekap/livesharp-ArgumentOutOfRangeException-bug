@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using test.lib;
 
 namespace test.console
 {
@@ -6,7 +8,7 @@ namespace test.console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"Types: {string.Join(", ", typeof(A).Assembly.GetTypes().Select(t => t.Name))}");
         }
     }
 }
